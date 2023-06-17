@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <button onclick="openModal()">Ouvrir la modal</button>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Sélectionnez une couleur</h2>
+      <div class="color-options">
+        <div class="color-option red" onclick="changeColor('red')"></div>
+        <div class="color-option blue" onclick="changeColor('blue')"></div>
+        <div class="color-option green" onclick="changeColor('green')"></div>
+        <div class="color-option yellow" onclick="changeColor('yellow')"></div>
+      </div>
+      <button onclick="download()" id="download-btn">Télécharger</button>
+      <button onclick="closeModal()" id="close-btn">Fermer</button>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
